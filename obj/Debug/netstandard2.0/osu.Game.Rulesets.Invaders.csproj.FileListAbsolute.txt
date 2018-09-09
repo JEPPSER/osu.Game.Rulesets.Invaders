@@ -1,0 +1,10 @@
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\bin\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.deps.json
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\bin\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.dll
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\bin\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.pdb
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\bin\Debug\netstandard2.0\osu.Game.Resources.dll
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\bin\Debug\netstandard2.0\osu.Game.Resources.pdb
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\obj\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.csproj.CoreCompileInputs.cache
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\obj\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.AssemblyInfoInputs.cache
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\obj\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.AssemblyInfo.cs
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\obj\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.dll
+C:\Users\JeSpEr\Documents\GitHub\osu\osu.Game.Rulesets.Invaders\obj\Debug\netstandard2.0\osu.Game.Rulesets.Invaders.pdb
