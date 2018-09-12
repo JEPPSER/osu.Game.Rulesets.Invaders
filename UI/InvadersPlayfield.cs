@@ -12,7 +12,7 @@ using osu.Game.Rulesets.UI;
 
 namespace osu.Game.Rulesets.Invaders.UI
 {
-    internal class InvadersPlayfield : Playfield, IRequireHighFrequencyMousePosition
+    internal class InvadersPlayfield : Playfield
     {
         private IBeatmap _beatmap;
         private readonly InvadersBlocker blocker;
@@ -31,9 +31,21 @@ namespace osu.Game.Rulesets.Invaders.UI
             });
         }
 
+        protected override bool OnMouseMove(InputState state)
+        {
+            Vector2 middle = new Vector2(RelativeToAbsoluteFactor.X * Width / 2, RelativeToAbsoluteFactor.Y * Height / 2);
+            float x1 = state.Mouse.Position.X / 2 + middle.X * 0.125f; // Adjusted mouse position.
+            float y1 = state.Mouse.Position.Y / 2 + middle.Y * 0.125f;
+            float x2 = middle.X;
+            float y2 = middle.Y;
+            float angle = (float) Math.Atan2(y2 - y1, x2 - x1);
+            blocker.SetAngle(angle);
+            return false;
+        }
+
         protected override bool OnKeyDown(InputState state, KeyDownEventArgs args)
         {
-            ArrayList inputs = new ArrayList();
+            /*ArrayList inputs = new ArrayList();
             if (state.Keyboard.IsPressed(OpenTK.Input.Key.D))
             {
                 inputs.Add(InvadersAction.Right);
@@ -50,13 +62,13 @@ namespace osu.Game.Rulesets.Invaders.UI
             {
                 inputs.Add(InvadersAction.Down);
             }
-            blocker.OnPressed(inputs);
+            blocker.OnPressed(inputs);*/
             return false;
         }
 
         protected override bool OnJoystickPress(InputState state, JoystickEventArgs args)
         {
-            Console.WriteLine(state.Joystick.Axes.Count);
+            Console.WriteLine(state);
             
             return false;
         }

@@ -33,29 +33,11 @@ namespace osu.Game.Rulesets.Invaders.UI
             };
         }
 
-        public bool OnPressed(ArrayList inputs)
+        public void SetAngle(float angle)
         {
-            Position = OriginPosition;
-            for(int i = 0; i < inputs.Count; i++)
-            {
-                if ((InvadersAction)inputs[i] == InvadersAction.Right)
-                {
-                    X = ROTATION_RADIUS;
-                }
-                if ((InvadersAction)inputs[i] == InvadersAction.Down)
-                {
-                    Y = ROTATION_RADIUS;
-                }
-                if((InvadersAction)inputs[i] == InvadersAction.Up)
-                {
-                    Y = -ROTATION_RADIUS;
-                }
-                if((InvadersAction)inputs[i] == InvadersAction.Left)
-                {
-                    X = -ROTATION_RADIUS;
-                }
-            }
-            return false;
+            float x = -ROTATION_RADIUS * (float) Math.Cos(angle);
+            float y = -ROTATION_RADIUS * (float) Math.Sin(angle);
+            Position = new Vector2(x, y);
         }
     }
 }
